@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+$font1: "Merriweather", serif;
+
+$color1: rgb(243, 232, 212);
+$color2: rgb(235, 198, 129);
+$color3: rgb(208, 142, 20);
+$color4: rgb(246, 161, 3);
+
+$grande: 60px;
+$mediana: 40px;
+$chica: 16px;
+
+#collapsibleNavbar {
+    justify-content: flex-end;
+    text-align: center;
+    font-size: $chica+4;
+}
+.protegemos {
+    background-image: url(./multimedia/imagen\ familia.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+                .protegemosTexto {
+                    background-color: rgba(255, 255, 255, 0.4);
+                    width: 90%;
+                    margin-top: 0px;
+                    text-shadow: 0 0 2px white;
+                    padding: 20px;
+                    border-radius: 5%;
+                    font-size: $mediana;
+                    @media only screen and (min-width: 1000px) {width: 75%}
+                    @media only screen and (min-width: 1200px) {width: 55%}
+                            p {
+                                text-shadow: 0 0 1px black;
+                                font-size: $chica;
+                    }
+    }
+}
+.quienes {
+    background-color: $color1;
+    background-position: center center;
+    text-align: center;
+    padding: 25px 10px 25px 10px;
+            h2 {
+                font-size: $grande;
+                color: rgba(65, 53, 53, 0.694);
+                text-shadow: 0 0 10px rgb(91, 86, 224);
+            }
+            h3 {
+                font-size: $mediana;
+            }
+            p {
+                font-size: $chica+4;
+            }
+}
+.nuestro {
+    @extend .quienes;
+    background-color: $color2;
+        li {
+            color: white;
+    list-style: none;
+    font-size: 20PX;
+    padding: 8px;
+    text-shadow: 0 0 5px black;
+        }
+}
+aside {
+    background-color: $color3;
+    background-position: center center;
+    text-align: center;
+    padding:50px 10px 50px 10px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 4px rgb(253, 250, 250);
+
+}
+.accidentes {
+    @extend .protegemos;
+    background-image: url(./multimedia/ap.jpg);
+            .accidentesTexto {
+                @extend .protegemosTexto;
+                @media only screen and (min-width: 320px) {width: 100%}
+            }
+}
+.seg {
+    @extend .protegemos;
+    background-image: url(./multimedia/vida.jpg);
+        .seguroDeVidaTexto {
+            @extend .protegemosTexto;
+            @media only screen and (min-width: 320px) {width: 100%}
+        }
+}
+.coberturas h2 {
+    background-color: rgb(245, 245, 200);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+.retiro {
+    @extend .protegemos;
+    background-image: url(./multimedia/retiro.jpg);
+        .retiroTexto {
+            @extend .protegemosTexto;
+                }
+        }
+.personaliza {
+    background-color: $color3;
+}
+.contacto {
+    background-image: url(./multimedia/contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    vertical-align:sub;
+    padding: 180px 40px 180px 40px;
+        .ingresoDatos {
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            margin-top: 0px;
+            padding: 20px;
+            display: grid
+        }
+                h2 {
+                    font-size: $mediana;
+                    text-shadow: 0 0 3px white;
+                        p {
+                            font-size: $chica;
+                            text-shadow: 0 0 3px white;
+                                input {
+                                    padding: 10px 30px;
+                            }
+                    }
+            }
+}
+footer {
+    background-position: center center;
+    text-align: center;
+    padding: 25px 10px 25px 10px;
+    color: white;
+    font-size: $chica+5;
+    a:hover {
+        text-shadow: 0 0 4px rgb(215, 231, 133);
+    }    
+    .redes a {
+            letter-spacing: 15px;
+    font-size: 70px;
+        }
+}
