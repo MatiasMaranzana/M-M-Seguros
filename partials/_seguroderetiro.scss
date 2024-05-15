@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+$font1: "Merriweather", serif;
+
+$color1: rgb(243, 232, 212);
+$color2: rgb(235, 198, 129);
+$color3: rgb(208, 142, 20);
+$color4: rgb(246, 161, 3);
+
+$grande: 60px;
+$mediana: 40px;
+$chica: 16px;
+
+.retiro {
+    @extend .protegemos;
+    background-image: url(../multimedia/retiro.jpg);
+        .retiroTexto {
+            @extend .protegemosTexto;
+                }
+        }
+.personaliza {
+    background-color: $color3;
+}

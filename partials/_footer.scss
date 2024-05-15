@@ -17,11 +17,17 @@ $grande: 60px;
 $mediana: 40px;
 $chica: 16px;
 
-.accidentes {
-    @extend .protegemos;
-    background-image: url(../multimedia/ap.jpg);
-            .accidentesTexto {
-                @extend .protegemosTexto;
-                @media only screen and (min-width: 320px) {width: 100%}
-            }
+footer {
+    background-position: center center;
+    text-align: center;
+    padding: 25px 10px 25px 10px;
+    color: white;
+    font-size: $chica+5;
+    a:hover {
+        text-shadow: 0 0 4px rgb(215, 231, 133);
+    }    
+    .redes a {
+            letter-spacing: 15px;
+    font-size: $grande+10;
+        }
 }

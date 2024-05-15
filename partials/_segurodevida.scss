@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+$font1: "Merriweather", serif;
+
+$color1: rgb(243, 232, 212);
+$color2: rgb(235, 198, 129);
+$color3: rgb(208, 142, 20);
+$color4: rgb(246, 161, 3);
+
+$grande: 60px;
+$mediana: 40px;
+$chica: 16px;
+
+.seg {
+    @extend .protegemos;
+    background-image: url(../multimedia/vida.jpg);
+        .seguroDeVidaTexto {
+            @extend .protegemosTexto;
+            @media only screen and (min-width: 320px) {width: 100%}
+        }
+}
+.coberturas h2 {
+    background-color: rgb(245, 245, 200);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 20px;
+}
+.coberturasVarias {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 100px);
+    background-color: burlywood;
+    padding: 10px;
+    grid-gap: 10px;
+}
+@media only screen and (min-width: 899px) {
+    .coberturasVarias {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 23%)
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .coberturasVarias {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 48%)
+    }
+}
+.cob {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: $chica+2;
+    text-align: center;
+    height: auto;
+}

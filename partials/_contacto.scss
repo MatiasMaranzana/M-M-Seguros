@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+$font1: "Merriweather", serif;
+
+$color1: rgb(243, 232, 212);
+$color2: rgb(235, 198, 129);
+$color3: rgb(208, 142, 20);
+$color4: rgb(246, 161, 3);
+
+$grande: 60px;
+$mediana: 40px;
+$chica: 16px;
+
+.contacto {
+    background-image: url(../multimedia/contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    vertical-align:sub;
+    padding: 180px 40px 180px 40px;
+        .ingresoDatos {
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            margin-top: 0px;
+            padding: 20px;
+            display: grid
+        }
+                h2 {
+                    font-size: $mediana;
+                    text-shadow: 0 0 3px white;
+                        p {
+                            font-size: $chica;
+                            text-shadow: 0 0 3px white;
+                                input {
+                                    padding: 10px 30px;
+                            }
+                    }
+            }
+}
