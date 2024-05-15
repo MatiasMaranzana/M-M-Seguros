@@ -105,6 +105,36 @@ aside {
   padding: 20px;
 }
 
+.coberturasVarias {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 100px);
+  background-color: burlywood;
+  padding: 10px;
+  grid-gap: 10px;
+}
+
+@media only screen and (min-width: 899px) {
+  .coberturasVarias {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 23%);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .coberturasVarias {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 48%);
+  }
+}
+.cob {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  height: auto;
+}
+
 .retiro {
   background-image: url(./multimedia/retiro.jpg);
 }
