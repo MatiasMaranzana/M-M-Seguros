@@ -1,0 +1,5 @@
+1 - incorporación de etiqueta META KEYWORS con palabras descriptivas de cada html.
+
+2- incorporación de etiqueta META DESCRIPTION con párrafo descriptivo de mi sitio.
+
+3 - mantuve un orden de importancia en cada pagina con degrade de colores para que en todas las paginas se vean con el mismo estilo en todo el sitio.
